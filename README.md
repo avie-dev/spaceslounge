@@ -11,13 +11,13 @@ In the project directory, you can run:
 1.  Clone the repo:
 
     ```console
-    $ git clone https://github.com/AliReza1083/Portfolio.git
+    $ git clone https://github.com/avie-dev/spaceslounge.git
     ```
 
 2.  Navigate to the cloned directory:
 
     ```console
-    $ cd Portfolio
+    $ cd spaceslounge
     ```
 
 3.  Install dependencies:
