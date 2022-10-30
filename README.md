@@ -23,18 +23,10 @@ In the project directory, you can run:
 3.  Install dependencies:
 
     ```console
-    $ npm install
-    ```
-
-    ```console
     $ yarn
     ```
 
 4.  Run the project
-
-    ```console
-    $ npm run dev
-    ```
 
     ```console
     $ yarn dev

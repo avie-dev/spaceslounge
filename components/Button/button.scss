@@ -1,0 +1,11 @@
+.button {
+  font-size: 16px;
+  padding: 0.7em 1em;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  border-radius: 7px;
+}

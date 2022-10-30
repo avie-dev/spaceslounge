@@ -1,0 +1,45 @@
+header {
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+    h1 {
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      font-size: 108px;
+      background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+      );
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      letter-spacing: 10px;
+      opacity: 0;
+      animation: nameInsideAnimation 2s infinite alternate;
+
+      @keyframes nameInsideAnimation {
+        from {
+          background-size: 400%;
+        }
+        to {
+          background-size: 100%;
+        }
+      }
+    }
+
+    p {
+      padding: 0 10em;
+      margin-bottom: 1em;
+      opacity: 0;
+    }
+  }
+}
