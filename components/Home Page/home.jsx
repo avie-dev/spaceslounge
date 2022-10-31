@@ -19,10 +19,11 @@ const home = () => {
           animate={{ y: [100, -10, 0], scale: [1, 1.2, 1], opacity: [0, 1] }}
           transition={{ duration: 1, delay: 0.1 }}
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dicta
-          dolor saepe alias quos, totam laboriosam ut itaque ullam voluptatum
-          adipisci! Voluptatum similique sunt, earum autem consectetur aperiam
-          mollitia quas.
+          Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+          laying out print, graphic or web designs. The passage is attributed to
+          an unknown typesetter in the 15th century who is thought to have
+          scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a
+          type specimen book. It usually begins with:
         </m.p>
         <Button path="/sign-up" />
       </div>
