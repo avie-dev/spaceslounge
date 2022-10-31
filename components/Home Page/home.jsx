@@ -12,7 +12,7 @@ const home = () => {
           animate={{ y: [100, -10, 0], scale: [1, 1.2, 1], opacity: [0, 1] }}
           transition={{ duration: 1 }}
         >
-          twitter lounge
+          spaces lounge
         </m.h1>
         <m.p
           animate={{ y: [100, -10, 0], scale: [1, 1.2, 1], opacity: [0, 1] }}

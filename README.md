@@ -1,4 +1,4 @@
-# spaceslounge
+# SpacesLounge
 
 Twitter Spaces Host and Speaker's Lounge
 
