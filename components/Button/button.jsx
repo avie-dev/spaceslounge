@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const button = () => {
+const button = ({ path }) => {
   return (
-    <Link className="button" href={"/"}>
+    <Link className="button" href={path}>
       Start adding Your Space
     </Link>
   );

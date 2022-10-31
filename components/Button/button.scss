@@ -6,6 +6,17 @@
     var(--primary-color),
     var(--secondary-color)
   );
+  background-size: 200%;
   color: white;
   border-radius: 7px;
+  transition: 0.3s;
+
+  &:hover {
+    background-size: 100%;
+    box-shadow: 0 3px 5px rgba(133, 133, 133, 0.323);
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 }

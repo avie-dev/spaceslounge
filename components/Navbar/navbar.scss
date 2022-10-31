@@ -1,0 +1,14 @@
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  padding: 0 1em;
+
+  a {
+    color: var(--text-color);
+  }
+}

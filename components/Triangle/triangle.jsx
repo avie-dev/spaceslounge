@@ -1,9 +1,11 @@
+import { motion as m } from "framer-motion";
+
 const triangle = () => {
   return (
-    <div className="triangle">
+    <m.div className="triangle" animate={{ opacity: [0, 1] }}>
       <div className="upper_shape"></div>
       <div className="down_shape"></div>
-    </div>
+    </m.div>
   );
 };
 
