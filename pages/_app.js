@@ -12,24 +12,28 @@ import LogoDark from "../public/LogoDark.svg";
 import Navbar from "../components/Navbar/navbar";
 
 import { AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 function MyApp({ Component, pageProps, router }) {
   const [logo, setLogo] = useState(LogoLight);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] =
+    typeof window !== "undefined" ? useLocalStorage("darkMode", false) : "";
 
   const themeToggling = (e) => {
     const togglerButton = e.target.checked;
-    if (togglerButton == true) {
+    togglerButton ? setDarkMode(true) : setDarkMode(false);
+  };
+
+  useEffect(() => {
+    if (darkMode == true) {
       document.body.classList.add("dark");
       setLogo(LogoDark);
-      setDarkMode(true);
     } else {
       document.body.classList.remove("dark");
       setLogo(LogoLight);
-      setDarkMode(false);
     }
-  };
+  }, [darkMode]);
 
   return (
     <div>
