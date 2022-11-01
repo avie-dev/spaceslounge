@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const button = ({ path }) => {
+const Button = ({ path }) => {
   return (
     <Link className="button" href={path}>
       Start adding Your Space
@@ -8,4 +8,4 @@ const button = ({ path }) => {
   );
 };
 
-export default button;
+export default Button;

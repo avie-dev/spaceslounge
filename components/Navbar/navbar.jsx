@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MaterialUISwitch } from "../Light and Dark/lightAndDark";
+import { MaterialUISwitch } from "../LightAndDark/lightAndDark";
 
 const Navbar = ({ themeToggling, Logo, defaultChecked }) => {
   return (
