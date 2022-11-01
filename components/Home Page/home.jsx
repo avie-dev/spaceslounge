@@ -1,10 +1,10 @@
 import Button from "../Button/button";
 import Triangle from "../Triangle/triangle";
-import Information from "../WebsiteInformation/WhatIsSpaceslounge/information";
+import Information1 from "../Website Information/what is spaceslounge/information-1";
 
 import { motion as m } from "framer-motion";
 
-const Home = () => {
+const home = () => {
   return (
     <div>
       <m.header exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
@@ -31,9 +31,9 @@ const Home = () => {
         </div>
       </m.header>
 
-      <Information />
+      <Information1 />
     </div>
   );
 };
 
-export default Home;
+export default home;

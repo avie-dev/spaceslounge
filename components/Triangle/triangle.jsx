@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 
-const Triangle = () => {
+const triangle = () => {
   return (
     <m.div className="triangle" animate={{ opacity: [0, 1] }}>
       <div className="upper_shape"></div>
@@ -9,4 +9,4 @@ const Triangle = () => {
   );
 };
 
-export default Triangle;
+export default triangle;

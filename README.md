@@ -8,28 +8,26 @@ In the project directory, you can run:
 
 ## Running the project
 
-1. [Fork](https://github.com/avie-dev/spaceslounge/fork) the project
+1.  Clone the repo:
 
-2. Clone the repo:
+    ```console
+    $ git clone https://github.com/avie-dev/spaceslounge.git
+    ```
 
-   ```console
-   $ git clone https://github.com/<your-github-username>/spaceslounge.git
-   ```
+2.  Navigate to the cloned directory:
 
-3. Navigate to the cloned directory:
+    ```console
+    $ cd spaceslounge
+    ```
 
-   ```console
-   $ cd spaceslounge
-   ```
+3.  Install dependencies:
 
-4. Install dependencies:
+    ```console
+    $ yarn
+    ```
 
-   ```console
-   $ yarn
-   ```
+4.  Run the project
 
-5. Run the project
-
-   ```console
-   $ yarn dev
-   ```
+    ```console
+    $ yarn dev
+    ```

@@ -1,6 +1,6 @@
-const Information = () => {
+const Information1 = () => {
   return (
-    <div className="information">
+    <div className="information_1">
       <h1>
         What is <span className="text_gradient">SPACESLOUNGE</span>?
       </h1>
@@ -8,4 +8,4 @@ const Information = () => {
   );
 };
 
-export default Information;
+export default Information1;
