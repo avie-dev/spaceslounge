@@ -1,0 +1,32 @@
+.triangle {
+  opacity: 0;
+
+  .upper_shape {
+    width: 100%;
+    height: 250px;
+    background: var(--background-color-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+
+  .down_shape {
+    width: 100%;
+    height: 250px;
+    background: var(--background-color-2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  @media (max-width: 1292px) {
+    .upper_shape,
+    .down_shape {
+      height: 20%;
+    }
+  }
+}
