@@ -5,6 +5,7 @@ import "../components/Button/button.scss";
 import "../components/Light and Dark/lightAndDark.scss";
 import "../components/Sign-Up Page/signup.scss";
 import "../components/Navbar/navbar.scss";
+import "../components/Website Information/what is spaceslounge/information-1.scss";
 
 import LogoLight from "../public/LogoLight.svg";
 import LogoDark from "../public/LogoDark.svg";
@@ -25,19 +26,26 @@ function MyApp({ Component, pageProps, router }) {
     togglerButton ? setDarkMode(true) : setDarkMode(false);
   };
 
+  const dark = () => {
+    document.body.classList.add("dark");
+    setLogo(LogoDark);
+  };
+  const light = () => {
+    document.body.classList.remove("dark");
+    setLogo(LogoLight);
+  };
+
   useEffect(() => {
-    if (darkMode == true) {
-      document.body.classList.add("dark");
-      setLogo(LogoDark);
-    } else {
-      document.body.classList.remove("dark");
-      setLogo(LogoLight);
-    }
+    darkMode ? dark() : light();
   }, [darkMode]);
 
   return (
     <div>
-      <Navbar themeToggling={themeToggling} Logo={logo} />
+      <Navbar
+        themeToggling={themeToggling}
+        defaultChecked={darkMode}
+        Logo={logo}
+      />
       <AnimatePresence mode="wait">
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>

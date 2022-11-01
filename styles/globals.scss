@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: height 0.2s;
+  transition: height 0.2s, background-color 0.5s;
 }
 
 body {
@@ -22,5 +22,15 @@ body {
   a {
     color: black;
     text-decoration: none;
+  }
+
+  .text_gradient {
+    background: linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--secondary-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

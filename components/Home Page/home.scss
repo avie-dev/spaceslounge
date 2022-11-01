@@ -14,14 +14,7 @@ header {
       font-family: "Raleway", sans-serif;
       text-transform: uppercase;
       font-size: 108px;
-      background: linear-gradient(
-        to right,
-        var(--primary-color),
-        var(--secondary-color)
-      );
       background-size: 100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       font-weight: 900;
       letter-spacing: 10px;
       opacity: 0;
