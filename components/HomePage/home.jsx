@@ -4,6 +4,8 @@ import Information from "../WebsiteInformation/WhatIsSpaceslounge/information";
 
 import { motion as m } from "framer-motion";
 
+import "./app.js";
+
 const Home = () => {
   return (
     <div>

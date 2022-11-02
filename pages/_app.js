@@ -15,13 +15,26 @@ import Navbar from "../components/Navbar/navbar";
 
 import { AnimatePresence } from "framer-motion";
 
+import { useEffect, useState } from "react";
+
 function MyApp({ Component, pageProps, router }) {
+  const [logo, setLogo] = useState(LogoLight);
+
+  const themeToggling = (e) => {
+    const switchToggle = e.target.checked;
+    if (switchToggle) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  };
+
   return (
     <div>
       <Navbar
-        // themeToggling={themeToggling}
+        themeToggling={themeToggling}
         // defaultChecked={darkMode}
-        Logo={LogoLight}
+        Logo={logo}
       />
       <AnimatePresence mode="wait">
         <Component key={router.pathname} {...pageProps} />

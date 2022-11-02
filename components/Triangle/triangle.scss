@@ -21,6 +21,7 @@
     right: 0;
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    transition: 0.3s;
   }
 
   @media (max-width: 1292px) {
