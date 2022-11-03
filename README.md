@@ -2,10 +2,6 @@
 
 Twitter Spaces Host and Speaker's Lounge
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## Running the project
 
 1. [Fork](https://github.com/avie-dev/spaceslounge/fork) the project
@@ -33,3 +29,7 @@ In the project directory, you can run:
    ```console
    $ yarn dev
    ```
+
+## Contributing
+
+To make a contribution to documentation, code or design please follow the [contributing guidelines](https://github.com/avie-dev/spaceslounge/blob/main/CONTRIBUTING.md)
