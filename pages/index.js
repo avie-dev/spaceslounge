@@ -1,5 +1,8 @@
 import Head from "next/head";
-import HomePage from "../components/HomePage/home";
+
+import Header from "../components/Header/header";
+import Information from "../components/WebsiteInformation/What is Spaceslounge/information1";
+import Information2 from "../components/WebsiteInformation/Why Spaces Lounge/information2";
 
 export default function Home() {
   return (
@@ -10,7 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomePage />
+      <Header />
+      <Information />
+      <Information2 />
     </div>
   );
 }
