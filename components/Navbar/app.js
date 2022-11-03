@@ -1,12 +1,11 @@
 if (typeof window !== "undefined") {
   window.addEventListener("scroll", (e) => {
-    const down_triangle = document.querySelector(".down_shape");
+    const navbar = document.querySelector("nav");
     const scrollY = window.scrollY;
-
     if (scrollY >= 100) {
-      down_triangle.style.opacity = "0";
+      navbar.classList.add("nav_active");
     } else {
-      down_triangle.style.opacity = "1";
+      navbar.classList.remove("nav_active");
     }
   });
 }

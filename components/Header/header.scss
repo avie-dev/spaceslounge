@@ -11,13 +11,14 @@ header {
     height: 100vh;
 
     h1 {
+      color: var(--primary-color);
       font-family: "Raleway", sans-serif;
       text-transform: uppercase;
       font-size: 108px;
       background-size: 100%;
       font-weight: 900;
-      letter-spacing: 10px;
-      opacity: 0;
+      // letter-spacing: 10px;
+      // opacity: 0;
       animation: nameInsideAnimation 2s infinite alternate;
 
       @keyframes nameInsideAnimation {
@@ -28,12 +29,29 @@ header {
           background-size: 100%;
         }
       }
+
+      span {
+        display: inline-block;
+      }
     }
 
     p {
-      padding: 0 10em;
-      margin-bottom: 1em;
+      font-size: 36px;
+      padding: 0 10%;
+      margin-bottom: 0.5em;
       opacity: 0;
+    }
+
+    .mic {
+      position: absolute;
+      left: 5%;
+      z-index: -1;
+    }
+    .headphone {
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+      z-index: -1;
     }
 
     @media (max-width: 992px) {
@@ -42,18 +60,39 @@ header {
       }
 
       p {
-        padding: 0 5em;
+        padding: 0 1em;
+        font-size: 3vw;
+      }
+
+      .mic {
+        width: 300px;
+        height: 300px;
+      }
+
+      .headphone {
+        width: 150px;
+        height: 150px;
       }
     }
 
     @media (max-width: 576px) {
       h1 {
-        font-size: 42px;
+        font-size: 32px;
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 1em;
+      }
+
+      .mic {
+        top: 10%;
+        left: 0;
+        opacity: 0.5;
+      }
+
+      .headphone {
+        opacity: 0.7;
       }
     }
   }
