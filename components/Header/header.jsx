@@ -13,13 +13,14 @@ const header = () => {
 
   return (
     <div>
-      <m.header exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
+      <m.header>
         {/* <Triangle /> */}
         <div className="container">
           <h1>
             {letter.map((L, i) => {
               return (
                 <m.span
+                  className={`${i == 5 ? "fifthLetter" : ""}`}
                   key={i}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0, scale: [1.3, 1] }}

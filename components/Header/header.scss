@@ -33,6 +33,10 @@ header {
       span {
         display: inline-block;
       }
+
+      .fifthLetter {
+        margin-right: 24px;
+      }
     }
 
     p {
@@ -78,6 +82,10 @@ header {
     @media (max-width: 576px) {
       h1 {
         font-size: 32px;
+
+        .fifthLetter {
+          margin-right: 8px;
+        }
       }
 
       p {
