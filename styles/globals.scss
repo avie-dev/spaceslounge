@@ -3,12 +3,11 @@
 :root {
   --primary-color: #1da1f2;
   --secondary-color: #ad00ff;
-  --background-color: #fff;
-  --background-color-2: #1da1f2;
-  --text-color: black;
-
-  --nav-active: rgba(255, 255, 255, 0.408);
-  --nav-toggle-color: #f2f2f2;
+  --background-color: #212121;
+  --background-color-2: #22303c;
+  --text-color: white;
+  --nav-active: #2121215e;
+  --nav-toggle-color: #121212;
 }
 
 * {
@@ -21,6 +20,17 @@
 body {
   background-color: var(--background-color);
   font-family: "Poppins", sans-serif;
+
+  .main-container {
+    & > div {
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 
   a {
     color: black;

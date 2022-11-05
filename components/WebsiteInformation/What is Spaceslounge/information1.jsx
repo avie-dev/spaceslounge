@@ -3,6 +3,7 @@ import { whatIsSpacesLounge } from "./data";
 const Information = () => {
   return (
     <div className="information">
+      <div className="gradient_1"></div>
       <h1>
         What is <span className="text_gradient">SPACESLOUNGE</span>?
       </h1>

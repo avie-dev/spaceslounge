@@ -7,7 +7,7 @@ import { useState } from "react";
 
 import "./app";
 
-const Navbar = ({ themeToggling, Logo, defaultChecked }) => {
+const Navbar = ({ themeToggling, Logo, checked }) => {
   const [navIcons, setNavIcons] = useState(<RiMenu3Line />);
   const [navToggle, setNavToggle] = useState("false");
 
@@ -30,7 +30,7 @@ const Navbar = ({ themeToggling, Logo, defaultChecked }) => {
         <Image className="logo" src={Logo} alt="" />
       </Link>
       <ul data-nav-toggle={navToggle}>
-        <MaterialUISwitch onClick={themeToggling} checked={defaultChecked} />
+        <MaterialUISwitch onClick={themeToggling} defaultChecked={checked} />
         <Link className="navLink" href={"/"}>
           Sign In
         </Link>

@@ -1,11 +1,10 @@
-.dark {
-  --background-color: #212121;
-  --background-color-2: #22303c;
-  --text-color: white;
+.light {
+  --background-color: #fff;
+  --background-color-2: #1da1f2;
+  --text-color: black;
 
-  --nav-active: #2121215e;
-  --nav-toggle-color: #121212;
-
+  --nav-active: rgba(255, 255, 255, 0.408);
+  --nav-toggle-color: #f2f2f2;
   header {
     h1 {
       color: var(--secondary-color);

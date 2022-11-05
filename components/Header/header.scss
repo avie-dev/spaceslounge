@@ -10,6 +10,32 @@ header {
     text-align: center;
     height: 100vh;
 
+    .headerLogo {
+      position: relative;
+      opacity: 0;
+
+      img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .logoBg {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(
+          to bottom right,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        filter: blur(50px);
+      }
+    }
+
     h1 {
       color: var(--primary-color);
       font-family: "Raleway", sans-serif;
@@ -50,6 +76,16 @@ header {
       position: absolute;
       left: 5%;
       z-index: -1;
+      animation: mic 3s infinite alternate;
+
+      @keyframes mic {
+        from {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     }
     .headphone {
       position: absolute;
@@ -102,6 +138,15 @@ header {
       .headphone {
         opacity: 0.7;
       }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    width: 1500px;
+
+    .container {
+      height: auto;
+      padding: 10em 0;
     }
   }
 }

@@ -6,6 +6,7 @@ import { motion as m } from "framer-motion";
 
 import Mic from "../../public/Mic.png";
 import Headphone from "../../public/headphone.png";
+import HeaderLogo from "../../public/Header img.png";
 
 const header = () => {
   const websiteName = "spaces lounge";
@@ -14,8 +15,14 @@ const header = () => {
   return (
     <div>
       <m.header>
-        {/* <Triangle /> */}
         <div className="container">
+          <m.div
+            className="headerLogo"
+            animate={{ opacity: [0, 1], y: [10, 0] }}>
+            <Image src={HeaderLogo} alt="Header Logo"></Image>
+            <m.div className="logoBg"></m.div>
+          </m.div>
+
           <h1>
             {letter.map((L, i) => {
               return (
