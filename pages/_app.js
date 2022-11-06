@@ -9,7 +9,6 @@ import "../components/Navbar/navbar.scss";
 import "../components/WebsiteInformation/What is Spaceslounge/information1.scss";
 import "../components/WebsiteInformation/Why Spaces Lounge/information2.scss";
 import "../styles/404.scss";
-import "../styles/contributors.scss";
 
 import LogoLight from "../public/LogoLight.svg";
 import LogoDark from "../public/LogoDark.svg";
