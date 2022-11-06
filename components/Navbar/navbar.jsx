@@ -31,6 +31,9 @@ const Navbar = ({ themeToggling, Logo, checked }) => {
       </Link>
       <ul data-nav-toggle={navToggle}>
         <MaterialUISwitch onClick={themeToggling} defaultChecked={checked} />
+        <Link className="navLink" href={"/contributors"}>
+          Contributors
+        </Link>
         <Link className="navLink" href={"/"}>
           Sign In
         </Link>

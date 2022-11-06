@@ -20,7 +20,7 @@
     );
     position: absolute;
     top: -20%;
-    left: 0;
+    left: 10%;
     filter: blur(100px);
     z-index: -1;
   }
@@ -87,5 +87,9 @@
         font-size: 14px;
       }
     }
+  }
+
+  @media (min-width: 1500px) {
+    width: 1500px;
   }
 }
