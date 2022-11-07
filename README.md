@@ -6,10 +6,11 @@ Twitter Spaces Host and Speaker's Lounge
 
 ![Next.js](https://img.shields.io/badge/Next.js-305FCB?style=for-the-badge&logo=next.js&logoColor=white)
 ![tailwind css](https://img.shields.io/badge/tailwind_css-305FCB?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-305FCB?style=for-the-badge&logo=figma&logoColor=white)
 
 - Frontend - **Next.js**
 - CSS Framework - **Tailwind CSS**
-
+- Design & Prototype - **Figma**
 
 ## Running the project
 
