@@ -1,0 +1,27 @@
+// Navbar
+nav {
+  @media (max-width: 768px) {
+    ul {
+      @apply hidden flex-col-reverse items-center bg-[color:var(--nav-toggle-color)] p-4 rounded-lg absolute top-[5em] right-[1em];
+    }
+
+    ul[data-nav-toggle="true"] {
+      @apply flex;
+    }
+  }
+}
+
+.nav_active {
+  @apply bg-[color:var(----nav-active)] backdrop-blur-md;
+}
+
+// What is Spaces Lounge?
+.text_gradient {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

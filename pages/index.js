@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
 
-import Header from "../components/Header/header";
-import Information from "../components/WebsiteInformation/What is Spaceslounge/information1";
-import Information2 from "../components/WebsiteInformation/Why Spaces Lounge/information2";
+import Header from "../components/header";
+import Information from "../components/information1";
+import Information2 from "../components/information2";
 
 export default function Home() {
   return (
