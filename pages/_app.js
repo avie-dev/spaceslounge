@@ -1,14 +1,5 @@
 import "../styles/globals.scss";
-import "../styles/globals.scss";
-import "../components/Header/header.scss";
-import "../components/Triangle/triangle.scss";
-import "../components/Button/button.scss";
-import "../components/Light and Dark/lightAndDark.scss";
-import "../components/Sign-Up Page/signup.scss";
-import "../components/Navbar/navbar.scss";
-import "../components/WebsiteInformation/What is Spaceslounge/information1.scss";
-import "../components/WebsiteInformation/Why Spaces Lounge/information2.scss";
-import "../styles/404.scss";
+import "../styles/custom.scss";
 
 import LogoLight from "../public/LogoLight.svg";
 import LogoDark from "../public/LogoDark.svg";
@@ -16,7 +7,6 @@ import LogoDark from "../public/LogoDark.svg";
 import Navbar from "../components/Navbar/navbar";
 
 import { AnimatePresence } from "framer-motion";
-
 import { useState } from "react";
 
 function MyApp({ Component, pageProps, router }) {
