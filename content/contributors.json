@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Rakesh",
+    "job": "Designer",
+    "img": "https://github.com/RakeshSangem.png",
+    "github": "https://github.com/RakeshSangem",
+    "twitter": "https://twitter.com/RakeshSangem8"
+  },
+  {
+    "name": "Mayank",
+    "job": "Front-End",
+    "img": "https://github.com/Mayank-KS.png",
+    "github": "https://github.com/Mayank-KS",
+    "twitter": "https://twitter.com/KsMayank"
+  },
+  {
+    "name": "AashviKothari",
+    "job": "Front-End",
+    "img": "https://github.com/Mayank-KS.png",
+    "github": false,
+    "twitter": "https://twitter.com/Aashvikotharii"
+  },
+  {
+    "name": "Jaynarayan",
+    "job": "Front-End",
+    "img": "https://github.com/jaynarayan-vaishnav.png",
+    "github": "https://github.com/jaynarayan-vaishnav",
+    "twitter": "https://twitter.com/Aashvikotharii"
+  },
+  {
+    "name": "Cristian",
+    "job": "Front-End",
+    "img": "https://github.com/ctoffanin.png",
+    "github": "https://github.com/ctoffanin",
+    "twitter": "https://twitter.com/ctoffaninDev"
+  },
+  {
+    "name": "Ali Reza",
+    "job": "Front-End",
+    "img": "https://github.com/AliReza1083.png",
+    "github": "https://github.com/AliReza1083",
+    "twitter": "https://twitter.com/Ali_Developer05"
+  },
+  {
+    "name": "Avie",
+    "job": "Back-End",
+    "img": "https://github.com/avie-dev.png",
+    "github": "https://github.com/avie-dev",
+    "twitter": "https://twitter.com/aviedev"
+  },
+  {
+    "name": "Eno",
+    "job": "Back-End",
+    "img": "https://github.com/codEno12.png",
+    "github": "https://github.com/codEno12",
+    "twitter": "https://twitter.com/codEno_12"
+  }
+]
