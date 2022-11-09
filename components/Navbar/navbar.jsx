@@ -1,14 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MaterialUISwitch } from "../lightAndDark";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
+import { useTheme } from "next-themes";
+
+import LogoLight from "../../public/LogoLight.svg";
+import LogoDark from "../../public/LogoDark.svg";
 
 import "./app";
+import { useEffect } from "react";
 
-const Navbar = ({ themeToggling, Logo, checked }) => {
+const Navbar = () => {
+  const [logo, setLogo] = useState(LogoDark);
   const [navIcons, setNavIcons] = useState(<RiMenu3Line />);
   const [navToggle, setNavToggle] = useState("false");
+  const { theme, setTheme } = useTheme();
+  const [themeLogo, setThemeLogo] = useState(<FaSun />);
 
   // Open Navbar Links > 768px
   const openNavLink = () => {
@@ -25,19 +33,31 @@ const Navbar = ({ themeToggling, Logo, checked }) => {
     navToggle == "false" ? openNavLink() : closeNavLink();
   };
 
+  useEffect(() => {
+    if (theme == "light") {
+      document.documentElement.classList.add("dark");
+      setLogo(LogoLight);
+      setThemeLogo(<FaSun />);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setLogo(LogoDark);
+      setThemeLogo(<FaMoon />);
+    }
+  }, [theme]);
+
   return (
     <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 px-4">
       {/* Logo */}
       <Link href={"/"}>
-        <Image className="sm:w-[150px]" src={Logo} alt="" />
+        <Image className="sm:w-[150px]" src={logo} alt="" />
       </Link>
       {/* Nav Links */}
       <ul data-nav-toggle={navToggle} className="animation">
-        <MaterialUISwitch
-          onClick={themeToggling}
-          defaultChecked={checked}
-          className="nav-link-animation"
-        />
+        <button
+          className="bg-slate-600 p-2 mr-4 md:mr-0 border-2 border-transparent rounded-lg dark:bg-slate-200 self-center focus:border-slate-100 dark:focus:border-slate-700 duration-200"
+          onClick={() => setTheme(theme == "dark" ? "light" : "dark")}>
+          {themeLogo}
+        </button>
         <Link
           className="py-2 px-4 rounded-lg md:mb-2 hover:bg-[color:var(--nav-link-hover)] duration-200 nav-link-animation"
           href={"/contributors"}>
