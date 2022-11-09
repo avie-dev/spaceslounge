@@ -1,28 +1,19 @@
 import "../styles/globals.css";
 import "../styles/custom.css";
 
-import LogoLight from "../public/LogoLight.svg";
-import LogoDark from "../public/LogoDark.svg";
-
 import Navbar from "../components/Navbar/navbar";
 
 import { AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps, router }) {
-  const [logo, setLogo] = useState(LogoDark);
-
-  const themeToggling = () => {
-    document.documentElement.classList.toggle("dark");
-  };
-
   return (
-    <div className="main-container">
-      <Navbar themeToggling={themeToggling} checked={true} Logo={logo} />
+    <ThemeProvider defaultTheme="dark">
+      <Navbar />
       <AnimatePresence mode="wait">
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
-    </div>
+    </ThemeProvider>
   );
 }
 
