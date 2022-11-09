@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap");
 
-:root {
+/* :root {
   --primary-color: #1da1f2;
   --secondary-color: #ad00ff;
   --background-color: #212121;
@@ -12,21 +12,8 @@
   --text-color: white;
   --nav-active: #2121215e;
   --nav-toggle-color: #121212;
-}
-
-.light {
-  --background-color: #fff;
-  --background-color-2: #1da1f2;
-  --text-color: black;
-
-  --nav-active: rgba(255, 255, 255, 0.408);
-  --nav-toggle-color: #f2f2f2;
-  header {
-    h1 {
-      color: var(--secondary-color);
-    }
-  }
-}
+  --nav-link-hover: #151515;
+} */
 
 @layer base {
   h1 {
@@ -36,6 +23,6 @@
 }
 
 body {
-  @apply bg-[color:var(--background-color)] text-[color:var(--text-color)] overflow-x-hidden flex flex-col items-center duration-200;
+  @apply bg-[#212121] text-white dark:bg-white dark:text-black overflow-x-hidden flex flex-col items-center duration-200;
   font-family: "poppins", sans-serif;
 }

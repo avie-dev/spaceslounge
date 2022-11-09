@@ -1,5 +1,5 @@
-import "../styles/globals.scss";
-import "../styles/custom.scss";
+import "../styles/globals.css";
+import "../styles/custom.css";
 
 import LogoLight from "../public/LogoLight.svg";
 import LogoDark from "../public/LogoDark.svg";
@@ -12,21 +12,8 @@ import { useState } from "react";
 function MyApp({ Component, pageProps, router }) {
   const [logo, setLogo] = useState(LogoDark);
 
-  // Light Theme
-  const lightTheme = () => {
-    document.body.classList.add("light");
-    setLogo(LogoLight);
-  };
-  // Dark Theme
-  const darkTheme = () => {
-    document.body.classList.remove("light");
-    setLogo(LogoDark);
-  };
-
-  // Theme Changing Function
-  const themeToggling = (e) => {
-    const switchToggle = e.target.checked;
-    switchToggle ? darkTheme() : lightTheme();
+  const themeToggling = () => {
+    document.documentElement.classList.toggle("dark");
   };
 
   return (

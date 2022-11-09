@@ -1,10 +1,10 @@
-import React from "react";
+import { motion as m } from "framer-motion";
 
 const singUp = () => {
   return (
-    <div className="signup">
+    <m.div className="signup" exit={{ opacity: 0 }}>
       <h1>Sign up</h1>
-    </div>
+    </m.div>
   );
 };
 
