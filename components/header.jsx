@@ -20,7 +20,7 @@ const header = () => {
           className="relative opacity-0"
           animate={{ opacity: [0, 1], y: [10, 0] }}>
           <Image
-            className="w-[130px] h-[130px]"
+            className="w-[130px] h-[130px] md:w-[90px] md:h-[90px] sm:mb-4"
             src={HeaderLogo}
             alt="Header Logo"></Image>
           {/* Background Gradient for the logo */}
@@ -59,7 +59,7 @@ const header = () => {
 
         {/* Two images for the background -- Mic & Headphone */}
         <Image
-          className="absolute left-[5%] -z-10 lg:w-[300px] lg:h-[300px] sm:top-[10%] sm:left-0"
+          className="absolute left-[5%] -z-10 lg:w-[300px] lg:h-[300px] sm:top-[10%] sm:left-0 animate-pulse"
           src={Mic}
           alt="Mic"></Image>
         <Image
