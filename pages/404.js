@@ -1,10 +1,10 @@
-import React from "react";
+import { motion as m } from "framer-motion";
 
 const notFound = () => {
   return (
-    <div>
+    <m.div exit={{ opacity: 0 }} className="overflow-hidden">
       <h1 className="bg-red-700">Page not found</h1>
-    </div>
+    </m.div>
   );
 };
 
