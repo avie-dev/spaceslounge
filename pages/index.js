@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
 
-import Header from "../components/header";
-import Information from "../components/information1";
-import Information2 from "../components/information2";
+import Header from "../components/Header";
+import Information from "../components/Information1";
+import Information2 from "../components/Information2";
 
 export default function Home() {
   return (

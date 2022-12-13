@@ -1,4 +1,4 @@
-import { whatIsSpacesLounge } from "../content/websiteInfoData";
+import { whatIsSpacesLounge } from "../content/WebsiteInfoData";
 
 const Information = () => {
   return (

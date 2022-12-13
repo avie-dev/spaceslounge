@@ -1,10 +1,10 @@
-import { motion as m } from "framer-motion";
+import { motion } from "framer-motion";
 
 const singUp = () => {
   return (
-    <m.div className="signup" exit={{ opacity: 0 }}>
+    <motion.div className="signup" exit={{ opacity: 0 }}>
       <h1>Sign up</h1>
-    </m.div>
+    </motion.div>
   );
 };
 
