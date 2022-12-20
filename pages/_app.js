@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/navbar";
 
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
+import Footer from "../components/Footer/Footer";
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps, router }) {
       <AnimatePresence mode="wait">
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
+      <Footer />
     </ThemeProvider>
   );
 }
