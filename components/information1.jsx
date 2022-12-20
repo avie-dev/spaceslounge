@@ -1,4 +1,4 @@
-import { whatIsSpacesLounge } from "../content/websiteInfoData";
+import { WHAT_IS_SPACES_LOUNGE } from "../content/Website_Info";
 
 const Information = () => {
   return (
@@ -13,7 +13,7 @@ const Information = () => {
         </h1>
         {/* Information about this website */}
         <div className="descriptions">
-          {whatIsSpacesLounge.map((description, i) => {
+          {WHAT_IS_SPACES_LOUNGE.map((description, i) => {
             return (
               // Each Information
               <div
