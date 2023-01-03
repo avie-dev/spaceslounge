@@ -33,6 +33,12 @@ Twitter Spaces Host and Speaker's Lounge
    ```console
    $ yarn
    ```
+   
+   There is also [next-themes](https://www.npmjs.com/package/next-themes) being used and it might give error, in that case:
+   
+   ```console
+   $ yarn add next-themes
+   ```
 
 5. Run the project
 
