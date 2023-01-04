@@ -13,14 +13,6 @@ module.exports = {
         nav_toggle_color: "#121212",
       },
     },
-    screens: {
-      "2xl": { max: "1535px" },
-      xl: { max: "1279px" },
-      lg: { max: "992px" },
-      md: { max: "768px" },
-      sm: { max: "576px" },
-      min2xl: { min: "1535px" },
-    },
   },
   plugins: [],
 };
