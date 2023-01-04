@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { motion as m } from "framer-motion";
 
 import Header from "../components/header";
 import Information from "../components/information1";
@@ -14,11 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <m.div exit={{ opacity: 0 }}>
+      <div>
         <Header />
         <Information />
         <Information2 />
-      </m.div>
+      </div>
     </div>
   );
 }
