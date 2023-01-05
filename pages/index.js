@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import Header from "../components/home/header";
-import Information from "../components/home/information1";
-import Information2 from "../components/home/information2";
+import Header from "../components/Home/Header";
+import Information from "../components/Home/Information1";
+import Information2 from "../components/Home/Information2";
 
 export default function Home() {
   return (
