@@ -5,7 +5,7 @@ import { FaDiscord, FaTwitter, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="pt-10 pb-4 text-center">
-      <div className="footer-icons flex justify-evenly w-[200px]  sm:w-[35vw] m-auto text-2xl">
+      <div className="footer-icons flex justify-evenly w-[35vw]  sm:w-[200px] m-auto text-2xl">
         <a href="#">
           <FaDiscord />
         </a>
