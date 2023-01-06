@@ -16,12 +16,12 @@ const Host = () => {
       </button>
 
       {/* Container */}
-      <div className="grid grid-cols-5 lg:grid-cols-1 items-start gap-8 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-5 items-start gap-8 mt-4">
         {/* User's Details */}
         <User />
 
         {/* Spaces */}
-        <div className="col-span-3 lg:col-span-1 bg-[#2F3F50] dark:bg-[#F0F0F0] rounded-lg overflow-y-hidden">
+        <div className="col-span-1 lg:col-span-3 bg-[#2F3F50] dark:bg-[#F0F0F0] rounded-lg overflow-y-hidden">
           {/* Titles */}
           <Titles />
 
@@ -37,7 +37,7 @@ const Host = () => {
         <div className="bg-[#2F3F50] dark:bg-[#F0F0F0] rounded-lg p-2 lg:max-w-[300px]">
           <h2 className="text-center ">Scheduled Twitter Spaces</h2>
           {/* Details */}
-          <div className="p-2 lg:p-6 mt-4 lg:mt-0 flex flex-col gap-4">
+          <div className="p-6 lg:p-2 mt-0 lg:mt-4 flex flex-col gap-4">
             {SCHEDULED_TWITTER_SPACES.map((twitterSpaces) => {
               return (
                 <Scheduled_Twitter
