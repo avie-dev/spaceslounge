@@ -18,16 +18,17 @@ export default function ContributorPage(props) {
 function ContributorCard({ data }) {
   return (
     <>
-      <div className="relative my-6 mx-3 h-[353px] w-[265px] rounded-lg bg-[#2F3F50]">
+      <div className="relative my-6 mx-3 h-[353px] w-[265px] rounded-xl bg-[#2F3F50]">
         <img
           src={data.img}
-          className="py-3 mx-3 h-[245px] w-[240px] rounded-lg"
+          className="py-4 mx-3 h-[245px] w-[240px] rounded-xl"
         />
         <div className="m-3">
           <div>
             <div className="text-2xl font-semibold">{data.name}</div>
             <div className="font-light">{data.job}</div>
           </div>
+          <div></div>
         </div>
       </div>
     </>
