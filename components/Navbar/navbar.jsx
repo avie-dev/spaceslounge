@@ -49,22 +49,22 @@ const Navbar = () => {
     <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 px-4">
       {/* Logo */}
       <Link href={"/"}>
-        <Image className="sm:w-[150px]" src={logo} alt="" />
+        <Image className="w-[150px] sm:w-[200px]" src={logo} alt="" />
       </Link>
       {/* Nav Links */}
       <ul data-nav-toggle={navToggle} className="animation">
         <button
-          className="bg-slate-600 p-2 mr-4 md:mr-0 border-2 border-transparent rounded-lg dark:bg-slate-200 self-center focus:border-slate-100 dark:focus:border-slate-700 duration-200"
+          className="bg-slate-600 p-2 mr-0 md:mr-4 border-2 border-transparent rounded-lg dark:bg-slate-200 self-center focus:border-slate-100 dark:focus:border-slate-700 duration-200"
           onClick={() => setTheme(theme == "dark" ? "light" : "dark")}>
           {themeLogo}
         </button>
         <Link
-          className="py-2 px-4 rounded-lg md:mb-2 hover:bg-[color:var(--nav-link-hover)] duration-200 nav-link-animation"
+          className="py-2 px-4 rounded-lg mb-2 md:mb-0 hover:bg-[color:var(--nav-link-hover)] duration-200 nav-link-animation"
           href={"/contributors"}>
           Contributors
         </Link>
         <Link
-          className="w-full py-2 px-4 mx-2 md:mx-0 md:my-1 rounded-lg hover:bg-[color:var(--nav-link-hover)] duration-200 nav-link-animation"
+          className="w-full py-2 px-4 mx-0 md:mx-2 md:my-1 rounded-lg hover:bg-[color:var(--nav-link-hover)] duration-200 nav-link-animation"
           href={"/"}>
           Sign In
         </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
         </Link>
       </ul>
       {/* icons for toggling */}
-      <div className="hidden md:block text-2xl" onClick={navTogglingFunction}>
+      <div className="block md:hidden text-2xl" onClick={navTogglingFunction}>
         {navIcons}
       </div>
     </nav>

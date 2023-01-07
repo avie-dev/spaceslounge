@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Button from "./button";
+import Button from "../button";
 
 import { motion as m } from "framer-motion";
 
-import Mic from "../public/Mic.png";
-import Headphone from "../public/headphone.png";
-import HeaderLogo from "../public/Header img.png";
+import Mic from "../../public/Mic.png";
+import Headphone from "../../public/headphone.png";
+import HeaderLogo from "../../public/Header img.png";
 
 const header = () => {
   const websiteName = "spaces lounge";
@@ -14,13 +14,13 @@ const header = () => {
   return (
     // Header Element
     <m.header className="overflow-hidden relative">
-      <div className="flex flex-col items-center justify-center text-center h-screen min2xl:h-auto  min2xl:py-[10em]">
+      <div className="flex flex-col items-center justify-center text-center h-screen 2xl:h-auto 2xl:py-[10em]">
         {/* Logo header image */}
         <m.div
           className="relative opacity-0"
           animate={{ opacity: [0, 1], y: [10, 0] }}>
           <Image
-            className="w-[130px] h-[130px] md:w-[90px] md:h-[90px] sm:mb-4"
+            className="w-[90px] h-[90px] md:w-[130px] md:h-[130px] mb-4 sm:mb-0"
             src={HeaderLogo}
             alt="Header Logo"></Image>
           {/* Background Gradient for the logo */}
@@ -28,7 +28,7 @@ const header = () => {
         </m.div>
 
         {/* h1 tag */}
-        <h1 className="text-[108px] text-primary font-[900] uppercase lg:text-[8vw] sm:text-[32px] leading-[1.1]">
+        <h1 className=" text-primary font-[900] uppercase text-[32px] lg:text-[8vw] xl:text-[108px] leading-[1.1]">
           {letter.map((L, i) => {
             return (
               <m.span
@@ -50,7 +50,7 @@ const header = () => {
 
         {/* short information about Website */}
         <m.p
-          className="text-[36px] px-[10%] mb-4 opacity-0 lg:px-4 lg:text-[3vw] sm:text-base "
+          className="my-2 mb-6 opacity-0 px-4 lg:px-[10%] text-base lg:text-[3vw] xl:text-[36px]"
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1, delay: 0.1 }}>
           A place where you can find the upcoming Twitter spaces.
@@ -59,7 +59,7 @@ const header = () => {
 
         {/* Two images for the background -- Mic & Headphone */}
         <Image
-          className="absolute left-[5%] -z-10 lg:w-[300px] lg:h-[300px] sm:top-[10%] sm:left-0 animate-pulse"
+          className="absolute left-[5%] sm:top-[10%] w-[300px] h-[300px] md:w-auto md:h-auto animate-pulse -z-10"
           src={Mic}
           alt="Mic"></Image>
         <Image
