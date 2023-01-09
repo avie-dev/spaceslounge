@@ -16,7 +16,7 @@ const signUp = () => {
             <div>Sign-in as Host</div>
           </button>
         </Link>
-        <Link href="/host">
+        <Link href="/speaker">
           <button
             type="button"
             className="rounded-md px-5 py-3 flex gap-2 bg-[#1DA1F2]">
