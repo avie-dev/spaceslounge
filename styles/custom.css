@@ -48,3 +48,35 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.num {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ad00ff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+.num::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  transform: scale(1.2);
+  border: 1px solid #ae00ff6a;
+  border-radius: 50%;
+}
+.num::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  transform: scale(1.4);
+  border: 1px solid #ae00ff6a;
+  border-radius: 50%;
+}
