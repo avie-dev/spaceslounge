@@ -1,35 +1,41 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
-import { FaDiscord, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaDiscord, FaGithub } from "react-icons/fa";
+// import LogoLight from "../../public/LogoLight.svg";
+import Logo from "../../public/Header img.png";
 
 const Footer = () => {
+  // const bgcolor= "#DADADA"
   return (
-    <footer className="pt-10 pb-4 text-center">
-      <div className="footer-icons flex justify-evenly w-[35vw]  sm:w-[200px] m-auto text-2xl">
-        <a href="#">
-          <FaDiscord />
-        </a>
-        <a href="#">
-          <FaTwitter />
-        </a>
-        <a href="#">
-          <FaLinkedin />
-        </a>
+    <footer className=" w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px] relative">
+      <div className="w-[90%] mx-auto flex pt-10">
+        <Link href={"/"}>
+          <Image className="w-[117px]" src={Logo} alt="" />
+        </Link>
+        <ul className="ml-[24%] lg:ml-[320px] text-[14px] md:text-[18px]  font-medium text-[#FFFFFF73] dark:text-[#00000073] space-y-2 self-center">
+          <li className="text-[18px] md:text-[24px] text-[#FFFFFF] dark:text-[#000000]">
+            Page
+          </li>
+          <li>
+            <Link href={"#"}>Contributors</Link>
+          </li>
+          <li>
+            <Link href="/host">Host</Link>
+          </li>
+          <li>
+            <Link href="/speaker">Speaker</Link>
+          </li>
+        </ul>
       </div>
-      <div className="footer-nav my-4  text-md">
-        <Link href={"/"} className="">
-          Home
+      <div className=" absolute bottom-8 right-10 flex space-x-6">
+        <Link href=" https://github.com/avie-dev/spaceslounge">
+          <FaGithub size={30} className=" dark:text-[#00000073]" />
         </Link>
-        <Link href={"/projects"} className="ml-3">
-          Projects
-        </Link>
-        <Link href={"/contact"} className="ml-3">
-          Contact
+        <Link href="https://discord.gg/4ccommunity">
+          <FaDiscord size={30} className=" dark:text-[#00000073]" />
         </Link>
       </div>
-      <p className="text-sm text-gray-400">
-        SPACES LAUNGE &#64; {new Date().getFullYear()}
-      </p>
     </footer>
   );
 };
