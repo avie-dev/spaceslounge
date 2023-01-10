@@ -70,7 +70,9 @@
   transform: scale(1.2);
   border: 1px solid #ae00ff6a;
   border-radius: 50%;
+  animation: border 2s infinite alternate;
 }
+
 .num::before {
   content: "";
   width: 36px;
@@ -79,4 +81,13 @@
   transform: scale(1.4);
   border: 1px solid #ae00ff6a;
   border-radius: 50%;
+  animation: border 2s infinite alternate 0.5s;
+}
+@keyframes border {
+  from {
+    border-color: #ad00ff;
+  }
+  to {
+    border-color: transparent;
+  }
 }
