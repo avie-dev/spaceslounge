@@ -4,25 +4,21 @@ const Information = () => {
   return (
     // section
     <div className="flex flex-col items-center">
-      <div className="relative py-12 px-4 mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 overflow-hidden 2xl:max-w-[1536px]">
+      <div className="w-full max-w-[1536px] relative py-12 px-4 mt-12 gap-4 overflow-hidden">
         {/* Gradient item */}
         <div className="w-[300px] h-[100px] absolute top-[-20%] left:-[10%] min2xl:left-[15%] blur-3xl -z-10 bg-gradient-to-r from-primary to-secondary"></div>
-        {/* Title of this section */}
-        <h1 className="font-[900] text-2xl lg:text-[5vw] xl:text-4xl">
+        <h1 className="text-center font-[900] text-2xl lg:text-[5vw] xl:text-4xl">
           What is <span className="text_gradient">SPACESLOUNGE</span>?
         </h1>
-        {/* Information about this website */}
-        <div className="descriptions">
-          {WHAT_IS_SPACES_LOUNGE.map((description, i) => {
+
+        <div className="w-full max-w-[1000px] mx-auto flex flex-wrap gap-6 md:gap-8 lg:gap-12 my-16">
+          {WHAT_IS_SPACES_LOUNGE.map((spaceLounge) => {
             return (
-              // Each Information
               <div
-                key={i}
-                className="grid grid-cols-1 p-4 rounded-2xl border-2 border-transparent duration-100 lg:grid-cols-3 hover:bg-[#81818124] hover:border-2 hover:border-[#7f7f7f]">
-                <h2 className="text-xl md:text-lg"> {description.title} </h2>
-                <p className="col-span-2 text-sm md:text-base">
-                  {description.description}
-                </p>
+                key={spaceLounge.id}
+                className="basis-[300px] flex-grow bg-background_2 dark:bg-[#F6F6F6] p-6 rounded-lg mx-auto flex flex-col items-start shadow-2xl hover:-translate-y-1 duration-200 ease-out">
+                <p className="num">{spaceLounge.id}</p>
+                <p>{spaceLounge.description}</p>
               </div>
             );
           })}
