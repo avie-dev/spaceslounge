@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "../styles/custom.css";
 
-import Navbar from "../components/Navbar/navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
