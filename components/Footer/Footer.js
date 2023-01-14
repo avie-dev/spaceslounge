@@ -8,7 +8,7 @@ import Logo from "../../public/Header img.png";
 const Footer = () => {
   // const bgcolor= "#DADADA"
   return (
-    <footer className=" w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px] relative">
+    <footer className="absolute bottom-0 left-0 w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px]">
       <div className="w-[90%] mx-auto flex pt-10">
         <Link href={"/"}>
           <Image className="w-[117px]" src={Logo} alt="" />
