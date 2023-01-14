@@ -18,7 +18,7 @@ const Footer = () => {
             Page
           </li>
           <li>
-            <Link href={"#"}>Contributors</Link>
+            <Link href={"/contributors"}>Contributors</Link>
           </li>
           <li>
             <Link href="/host">Host</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className=" absolute bottom-8 right-10 flex space-x-6">
-        <Link href=" https://github.com/avie-dev/spaceslounge">
+        <Link href="https://github.com/avie-dev/spaceslounge">
           <FaGithub size={30} className=" dark:text-[#00000073]" />
         </Link>
         <Link href="https://discord.gg/4ccommunity">
