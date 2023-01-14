@@ -8,7 +8,7 @@ import Logo from "../../public/Header img.png";
 const Footer = () => {
   // const bgcolor= "#DADADA"
   return (
-    <footer className=" w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px] relative">
+    <footer className="absolute bottom-0 left-0 w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px]">
       <div className="w-[90%] mx-auto flex pt-10">
         <Link href={"/"}>
           <Image className="w-[117px]" src={Logo} alt="" />
@@ -18,7 +18,7 @@ const Footer = () => {
             Page
           </li>
           <li>
-            <Link href={"#"}>Contributors</Link>
+            <Link href={"/contributors"}>Contributors</Link>
           </li>
           <li>
             <Link href="/host">Host</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className=" absolute bottom-8 right-10 flex space-x-6">
-        <Link href=" https://github.com/avie-dev/spaceslounge">
+        <Link href="https://github.com/avie-dev/spaceslounge">
           <FaGithub size={30} className=" dark:text-[#00000073]" />
         </Link>
         <Link href="https://discord.gg/4ccommunity">

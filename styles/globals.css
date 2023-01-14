@@ -23,6 +23,6 @@
 }
 
 body {
-  @apply bg-[#15202B] text-[#E6E6E6] dark:bg-white dark:text-black overflow-x-hidden duration-200;
+  @apply relative min-h-full pb-[20em] bg-[#15202B] text-[#E6E6E6] dark:bg-white dark:text-black overflow-x-hidden duration-200;
   font-family: "poppins", sans-serif;
 }

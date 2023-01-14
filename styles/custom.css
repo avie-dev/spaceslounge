@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 /* Navbar */
 @media (max-width: 768px) {
   nav ul {
