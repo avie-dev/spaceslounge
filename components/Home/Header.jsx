@@ -13,7 +13,7 @@ const header = () => {
 
   return (
     // Header Element
-    <m.header className="overflow-hidden relative bg-[#111922] mb-12">
+    <m.header className="overflow-hidden relative bg-[#111922] dark:bg-[#fcfcfc] mb-12">
       <div className="flex flex-col items-center justify-center text-center h-screen 2xl:h-auto 2xl:py-[10em]">
         {/* Logo header image */}
         <m.div
