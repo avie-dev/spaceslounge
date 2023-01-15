@@ -13,6 +13,9 @@ export default function Information({ data }) {
         <h2 className="text-3xl lg:text-4xl text_gradient font-bold">
           {data.title2}
         </h2>
+        <h2 className="text-3xl lg:text-4xl text_gradient font-bold">
+          {data.title}
+        </h2>
         <p className="text-base md:text-xl">{data.description}</p>
       </div>
       <Image
