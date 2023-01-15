@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../button";
+import Button from "../Button";
 
 import { motion as m } from "framer-motion";
 
