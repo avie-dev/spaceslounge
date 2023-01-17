@@ -50,7 +50,7 @@ const header = () => {
 
         {/* short information about Website */}
         <m.p
-          className="my-2 mb-6 opacity-0 px-4 lg:px-[10%] text-base lg:text-[3vw] xl:text-[36px]"
+          className="my-2 mb-6 opacity-0 px-4 lg:px-[10%] text-base lg:text-[3vw] xl:text-[36px] leading-tight"
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1, delay: 0.1 }}>
           A place where you can find the upcoming Twitter spaces.
