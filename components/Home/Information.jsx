@@ -20,7 +20,7 @@ export default function Information({ data }) {
       </div>
       <Image
         src={data.img}
-        className="mx-auto"
+        className="mx-auto w-full max-w-[400px]"
         alt={`Why-spaces-lounge IMG${data.id}`}
       />
     </div>
