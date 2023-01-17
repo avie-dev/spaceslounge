@@ -54,7 +54,7 @@ const Navbar = () => {
       {/* Nav Links */}
       <ul data-nav-toggle={navToggle} className="animation">
         <button
-          aria-label="theme toogle"
+          aria-label="theme toggle"
           className="bg-slate-600 p-2 mr-0 md:mr-4 border-2 border-transparent rounded-lg dark:bg-slate-200 self-center focus:border-slate-100 dark:focus:border-slate-700 duration-200"
           onClick={() => setTheme(theme == "dark" ? "light" : "dark")}>
           {themeLogo}
