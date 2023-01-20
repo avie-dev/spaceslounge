@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../button";
+import Button from "../Button";
 
 import { motion as m } from "framer-motion";
 
@@ -13,18 +13,18 @@ const header = () => {
 
   return (
     // Header Element
-    <m.header className="overflow-hidden relative">
+    <m.header className="overflow-hidden relative bg-[#111922] dark:bg-[#fcfcfc] mb-12">
       <div className="flex flex-col items-center justify-center text-center h-screen 2xl:h-auto 2xl:py-[10em]">
         {/* Logo header image */}
         <m.div
           className="relative opacity-0"
           animate={{ opacity: [0, 1], y: [10, 0] }}>
           <Image
-            className="w-[90px] h-[90px] md:w-[130px] md:h-[130px] mb-4 sm:mb-0"
+            className="w-[90px] h-[90px] md:w-[130px] md:h-[130px] mb-4 sm:mb-0 z-10"
             src={HeaderLogo}
             alt="Header Logo"></Image>
           {/* Background Gradient for the logo */}
-          <m.div className="w-[100px] h-[100px] bg-gradient-to-r from-primary to-secondary absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 blur-3xl -z-[1]"></m.div>
+          <m.div className="w-[100px] h-[100px] bg-gradient-to-r from-primary to-secondary absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 blur-3xl"></m.div>
         </m.div>
 
         {/* h1 tag */}
@@ -50,7 +50,7 @@ const header = () => {
 
         {/* short information about Website */}
         <m.p
-          className="my-2 mb-6 opacity-0 px-4 lg:px-[10%] text-base lg:text-[3vw] xl:text-[36px]"
+          className="my-2 mb-6 opacity-0 px-4 lg:px-[10%] text-base lg:text-[3vw] xl:text-[36px] leading-tight"
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1, delay: 0.1 }}>
           A place where you can find the upcoming Twitter spaces.
@@ -59,11 +59,11 @@ const header = () => {
 
         {/* Two images for the background -- Mic & Headphone */}
         <Image
-          className="absolute left-[5%] sm:top-[10%] w-[300px] h-[300px] md:w-auto md:h-auto animate-pulse -z-10"
+          className="absolute left-[5%] sm:top-[10%] w-[300px] h-[300px] md:w-auto md:h-auto animate-pulse z-10 pointer-events-none"
           src={Mic}
           alt="Mic"></Image>
         <Image
-          className="absolute w-[150px] h-[150px] opacity-[.7] sm:opacity-100 lg:w-[auto] lg:h-[auto] right-[10%] bottom-[10%] -z-[1]"
+          className="absolute w-[150px] h-[150px] opacity-[.7] sm:opacity-100 lg:w-[auto] lg:h-[auto] right-[10%] bottom-[10%] z-10 pointer-events-none"
           src={Headphone}
           alt="Headphone"></Image>
       </div>

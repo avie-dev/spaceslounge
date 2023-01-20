@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Rakesh",
     "job": "Designer",
     "img": "https://github.com/RakeshSangem.png",
@@ -7,6 +8,7 @@
     "twitter": "https://twitter.com/RakeshSangem8"
   },
   {
+    "id": 2,
     "name": "Mayank",
     "job": "Front-End",
     "img": "https://github.com/Mayank-KS.png",
@@ -14,20 +16,23 @@
     "twitter": "https://twitter.com/KsMayank"
   },
   {
+    "id": 3,
     "name": "AashviKothari",
     "job": "Front-End",
-    "img": "https://github.com/Mayank-KS.png",
-    "github": false,
+    "img": "https://github.com/AashviKothari.png",
+    "github": "https://github.com/AashviKothari",
     "twitter": "https://twitter.com/Aashvikotharii"
   },
   {
+    "id": 4,
     "name": "Jaynarayan",
     "job": "Front-End",
     "img": "https://github.com/jaynarayan-vaishnav.png",
     "github": "https://github.com/jaynarayan-vaishnav",
-    "twitter": "https://twitter.com/Aashvikotharii"
+    "twitter": "https://twitter.com/jaystwtt"
   },
   {
+    "id": 5,
     "name": "Cristian",
     "job": "Front-End",
     "img": "https://github.com/ctoffanin.png",
@@ -35,6 +40,7 @@
     "twitter": "https://twitter.com/ctoffaninDev"
   },
   {
+    "id": 6,
     "name": "Ali Reza",
     "job": "Front-End",
     "img": "https://github.com/AliReza1083.png",
@@ -42,6 +48,7 @@
     "twitter": "https://twitter.com/Ali_Developer05"
   },
   {
+    "id": 7,
     "name": "Avie",
     "job": "Back-End",
     "img": "https://github.com/avie-dev.png",
@@ -49,10 +56,35 @@
     "twitter": "https://twitter.com/aviedev"
   },
   {
+    "id": 8,
     "name": "Eno",
     "job": "Back-End",
     "img": "https://github.com/codEno12.png",
     "github": "https://github.com/codEno12",
     "twitter": "https://twitter.com/codEno_12"
+  },
+  {
+    "id": 9,
+    "name": "Zona",
+    "job": "Back-End",
+    "img": "https://github.com/schamiir.png",
+    "github": "https://github.com/schamiir",
+    "twitter": "https://twitter.com/SupernovaZona"
+  },
+  {
+    "id": 10,
+    "name": "Luis",
+    "job": "Back-End",
+    "img": "https://github.com/LuECar.png",
+    "github": "https://github.com/LuECar",
+    "twitter": "https://twitter.com/LuuhTech"
+  },
+  {
+    "id": 11,
+    "name": "Jason",
+    "job": "Back-End",
+    "img": "https://github.com/HondaChan14.png",
+    "github": "https://github.com/HondaChan14",
+    "twitter": "https://twitter.com/HondaCivicChan"
   }
 ]
