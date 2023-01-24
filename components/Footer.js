@@ -1,12 +1,11 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
 import { FaDiscord, FaGithub } from "react-icons/fa";
-// import LogoLight from "../../public/LogoLight.svg";
-import Logo from "../../public/Header img.png";
 
-const Footer = () => {
-  // const bgcolor= "#DADADA"
+import Logo from "../public/Header img.png";
+
+export default function Footer() {
   return (
     <footer className="absolute bottom-0 left-0 w-full bg-[#121B24] dark:bg-[#DADADA] min-h-[200px]">
       <div className="w-[90%] mx-auto flex pt-10">
@@ -38,6 +37,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

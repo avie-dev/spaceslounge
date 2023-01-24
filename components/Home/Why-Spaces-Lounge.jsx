@@ -1,9 +1,10 @@
 import React from "react";
 
 import Information from "./Information";
+
 import { WHY_SPACES_LOUNGE } from "../../content/Website_Info";
 
-const WhySpacesLounge = () => {
+export default function WhySpacesLounge() {
   return (
     <div className="py-8 flex justify-center">
       <div className="w-full max-w-[1536px]">
@@ -18,6 +19,4 @@ const WhySpacesLounge = () => {
       </div>
     </div>
   );
-};
-
-export default WhySpacesLounge;
+}

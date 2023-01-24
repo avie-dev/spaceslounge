@@ -1,9 +1,10 @@
 import React from "react";
 
-import { HOST } from "../../content/Website_Info";
 import Information from "./Information";
 
-const ForHost = () => {
+import { HOST } from "../../content/Website_Info";
+
+export default function ForHost() {
   return (
     <div className="py-8 flex justify-center">
       <div className="w-full max-w-[1536px]">
@@ -16,6 +17,4 @@ const ForHost = () => {
       </div>
     </div>
   );
-};
-
-export default ForHost;
+}

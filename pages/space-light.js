@@ -1,3 +1,5 @@
+import React from "react";
+
 import data from "../content/spaces.json";
 import mic from "../public/micLogo.png";
 import { IoIosArrowDown } from "react-icons/io";

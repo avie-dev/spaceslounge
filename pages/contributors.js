@@ -1,6 +1,7 @@
+import React from "react";
 import { motion } from "framer-motion";
 
-import data from "../content/contributors.json";
+import { CONTRIBUTORS } from "../content/Contributors";
 
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 
@@ -11,8 +12,8 @@ export default function ContributorPage() {
         Our Contributors
       </div>
       <div className="w-full max-w-[1500px] flex flex-wrap justify-center gap-4">
-        {data.map((d) => (
-          <ContributorCard key={d.id} data={d} />
+        {CONTRIBUTORS.map((contributor) => (
+          <ContributorCard key={contributor.id} data={contributor} />
         ))}
       </div>
     </div>

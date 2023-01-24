@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-const NotFound = () => {
+export default function NotFound() {
   const route = useRouter();
 
   return (
@@ -11,6 +11,4 @@ const NotFound = () => {
       </button>
     </div>
   );
-};
-
-export default NotFound;
+}
