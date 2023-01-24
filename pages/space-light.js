@@ -1,9 +1,10 @@
 import React from "react";
 
-import data from "../content/spaces.json";
+import { SPACES_LIGHT } from "../content/Spaces";
 import mic from "../public/micLogo.png";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
+
 export default function SpaceLight() {
   return (
     <div className="w-full h-auto flex flex-col justify-start items-center mt-24">
@@ -24,7 +25,7 @@ export default function SpaceLight() {
         </div>
       </div>
       <div className="w-full lg:w-4/5 h-auto flex flex-col justify-start items-center md:rounded-lg overflow-hidden bg-background_2 divide-y-2 divide-slate-500 mt-5">
-        {data.map((space, index) => {
+        {SPACES_LIGHT.map((space, index) => {
           return <SpaceRow key={index} data={space} />;
         })}
       </div>

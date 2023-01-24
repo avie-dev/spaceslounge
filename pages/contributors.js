@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { CONTRIBUTORS } from "../content/Contributors";
@@ -26,13 +27,15 @@ function ContributorCard({ data }) {
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 1, delay: 0.05 * data.id }}
       className="relative p-3 h-[353px] w-[265px] rounded-xl dark:bg-white bg-[#2F3F50] border-[#8E8E8E] dark:shadow-xl border-[1px] hover:-translate-y-2 duration-150 opacity-0">
-      <img
+      <Image
         src={data.img}
-        className="h-[245px] w-[240px] rounded-md object-cover"
+        className="rounded-md object-cover"
+        width={245}
+        height={240}
       />
       <div className="mt-2 flex justify-between items-center">
         <div>
-          <div className="text-2xl font-medium">{data.name}</div>
+          <div className="text-xl font-medium mb-1">{data.name}</div>
           <div className="text-sm font-light opacity-50">{data.job}</div>
         </div>
         <div className="flex gap-3">

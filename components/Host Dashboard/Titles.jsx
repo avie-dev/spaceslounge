@@ -1,4 +1,4 @@
-const Titles = () => {
+export default function Titles() {
   return (
     <div
       id="responsive-grid"
@@ -9,6 +9,4 @@ const Titles = () => {
       <div>Speakers</div>
     </div>
   );
-};
-
-export default Titles;
+}

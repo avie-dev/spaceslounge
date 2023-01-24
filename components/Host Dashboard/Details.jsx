@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import UserImage from "../../public/user.png";
 
-const Details = ({ hostSpaces }) => {
+export default function Details({ hostSpaces }) {
   return (
     <div
       id="responsive-grid"
@@ -28,6 +28,4 @@ const Details = ({ hostSpaces }) => {
       </button>
     </div>
   );
-};
-
-export default Details;
+}

@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
@@ -9,7 +10,6 @@ import LogoLight from "../../public/LogoLight.svg";
 import LogoDark from "../../public/LogoDark.svg";
 
 import "./app";
-import { useEffect } from "react";
 
 const Navbar = () => {
   const [logo, setLogo] = useState(LogoDark);
