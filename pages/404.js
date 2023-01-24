@@ -1,11 +1,16 @@
-import { motion as m } from "framer-motion";
+import { useRouter } from "next/router";
 
-const notFound = () => {
+const NotFound = () => {
+  const route = useRouter();
+
   return (
-    <m.div exit={{ opacity: 0 }} className="overflow-hidden">
-      <h1 className="bg-red-700">Page not found</h1>
-    </m.div>
+    <div className="flex flex-col justify-center items-center gap-8 h-screen">
+      <h1 className="text-6xl">Page not found</h1>
+      <button className="text-blue-600 underline" onClick={() => route.back()}>
+        Home Page
+      </button>
+    </div>
   );
 };
 
-export default notFound;
+export default NotFound;
