@@ -1,9 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 import { SPACES_LIGHT } from "../content/Spaces";
 import mic from "../public/micLogo.png";
 import { IoIosArrowDown } from "react-icons/io";
-import Image from "next/image";
 
 export default function SpaceLight() {
   return (
@@ -39,10 +39,12 @@ function SpaceRow({ data }) {
   return (
     <div className="w-full flex justify-between items-center gap-2 py-3 pr-7 pl-3">
       <div className="h-full w-1/4 md:1/5 flex flex-col items-center md:flex-row justify-around gap-2 mr-2">
-        <img
+        <Image
           src={img}
           alt="user"
-          className="w-14 h-14 rounded-full border-2 border-white"
+          className="rounded-full border-2 border-white"
+          height={56}
+          width={56}
         />
         <div className="h-1/2 md:h-full w-full md:w-1/4 flex flex-col justify-evenly items-center py-2">
           <div className="text-white text-base md:text-lg">{speaker}</div>

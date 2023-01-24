@@ -32,6 +32,7 @@ function ContributorCard({ data }) {
         className="rounded-md object-cover"
         width={245}
         height={240}
+        alt={data.name}
       />
       <div className="mt-2 flex justify-between items-center">
         <div>
