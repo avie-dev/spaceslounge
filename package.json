@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@next/font": "^13.1.5",
     "framer-motion": "^7.6.3",
     "next": "13.0.1",
     "next-themes": "^0.2.1",

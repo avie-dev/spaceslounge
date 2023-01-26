@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Button from "../Button";
 
@@ -7,7 +8,7 @@ import Mic from "../../public/Mic.png";
 import Headphone from "../../public/headphone.png";
 import HeaderLogo from "../../public/Header img.png";
 
-const header = () => {
+export default function Header() {
   const websiteName = "spaces lounge";
   const letter = Array.from(websiteName);
 
@@ -69,6 +70,4 @@ const header = () => {
       </div>
     </m.header>
   );
-};
-
-export default header;
+}

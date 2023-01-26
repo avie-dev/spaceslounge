@@ -8,7 +8,7 @@ import {
   AiFillDelete,
 } from "react-icons/ai";
 
-const Scheduled_Twitter = ({ twitterSpaces }) => {
+export default function Scheduled_Twitter({ twitterSpaces }) {
   return (
     <div className="bg-[#283542] dark:bg-[#d5d5d5] p-2 rounded-md">
       <div className="flex items-start mb-4">
@@ -36,6 +36,4 @@ const Scheduled_Twitter = ({ twitterSpaces }) => {
       </div>
     </div>
   );
-};
-
-export default Scheduled_Twitter;
+}

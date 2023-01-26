@@ -1,32 +1,24 @@
+import React from "react";
+
 import Link from "next/link";
-import { motion as m } from "framer-motion";
 import { AiOutlineTwitter } from "react-icons/ai";
 
-const signUp = () => {
+export default function SignUp() {
   return (
-    <m.div
-      className="signup h-screen flex justify-center items-center"
-      exit={{ opacity: 0 }}>
-      <section className="flex-col flex gap-6">
-        <Link href="/host">
-          <button
-            type="button"
-            className="rounded-md px-8 py-3 flex gap-2 bg-[#1DA1F2]">
-            <AiOutlineTwitter className="h-6 w-6" />
-            <div>Sign-in as Host</div>
-          </button>
-        </Link>
-        <Link href="/speaker">
-          <button
-            type="button"
-            className="rounded-md px-5 py-3 flex gap-2 bg-[#1DA1F2]">
-            <AiOutlineTwitter className="h-6 w-6" />
-            <div>Sign-in as Speaker</div>
-          </button>
-        </Link>
+    <div className="h-screen flex justify-center items-center">
+      <section className="flex flex-col gap-6">
+        <SignInButton path={"/host"} text={"Sign-in as Host"} />
+        <SignInButton path={"/speaker"} text={"Sign-in as Speaker"} />
       </section>
-    </m.div>
+    </div>
+  );
+}
+
+const SignInButton = ({ path, text }) => {
+  return (
+    <Link href={path} className="flex gap-2 rounded-md px-8 py-3 bg-[#1DA1F2]">
+      <AiOutlineTwitter className="text-2xl" />
+      <p>{text}</p>
+    </Link>
   );
 };
-
-export default signUp;

@@ -1,12 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-const AddSpace = () => {
+export default function AddSpace() {
   return (
     <div className="h-screen flex justify-center items-center p-4">
-      <form
-        action=""
-        className="w-full max-w-[585px] bg-[#2F3F50] dark:bg-[#F0F0F0] p-4 rounded-lg flex flex-col gap-5">
+      <form className="w-full max-w-[585px] bg-[#2F3F50] dark:bg-[#F0F0F0] p-4 rounded-lg flex flex-col gap-5">
         <input
           type="text"
           placeholder="Title"
@@ -57,6 +55,4 @@ const AddSpace = () => {
       </form>
     </div>
   );
-};
-
-export default AddSpace;
+}
