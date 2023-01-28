@@ -17,7 +17,7 @@ export default function Footer() {
       </Link>
       <ul className="text-[14px] md:text-[18px] font-medium text-[#FFFFFF73] dark:text-[#00000073]">
         <li className="text-[18px] md:text-[24px] text-[#FFFFFF] dark:text-[#000000]">
-          Page
+          <Link href={"/"}>Page</Link>
         </li>
         <li>
           <Link href={"/contributors"}>Contributors</Link>
