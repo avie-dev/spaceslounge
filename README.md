@@ -18,7 +18,7 @@ Spaces Lounge is built using the following technologies:
 - CSS Framework - **Tailwind CSS**
 - Design & Prototype - **Figma**
 
-##Running the project
+## Running the project
 
 1. [Fork](https://github.com/avie-dev/spaceslounge/fork) the project.
 
