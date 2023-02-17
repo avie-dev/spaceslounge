@@ -9,8 +9,8 @@ export default function NotFound() {
     <div className="flex justify-center items-center px-4 gap-8 h-screen">
       <div className="flex-1 md:flex-[0.5] flex flex-col items-start justify-center">
         <div className="w-full mb-12 max-w-[3xl]">
-          <div className="text-6xl lg:text-7xl mb-6">Are you lost?</div>
-          <p className="text-2xl md:text-3xl">
+          <div className="text-4xl lg:text-5xl mb-6">Are you lost?</div>
+          <p className="text-2xl md:text-2xl">
             it looks like that page doesn’t - please check the URL and try again
           </p>
         </div>
