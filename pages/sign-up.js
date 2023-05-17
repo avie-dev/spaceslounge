@@ -1,15 +1,17 @@
 import React from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineTwitter } from "react-icons/ai";
+import wave from "../public/wave.svg";
 
 export default function SignUp() {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <section className="flex flex-col gap-6">
+    <div className="h-screen flex justify-center items-center flex-col relative">
+      <section className="flex flex-col gap-6 absolute">
         <SignInButton path={"/host"} text={"Sign-in as Host"} />
         <SignInButton path={"/speaker"} text={"Sign-in as Speaker"} />
       </section>
+      <Image src={wave} alt="" className="w-full mt-auto" />
     </div>
   );
 }
